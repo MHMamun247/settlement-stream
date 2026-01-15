@@ -1,11 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { AuroraBackground } from "@/components/AuroraBackground";
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { TrustStrip } from "@/components/TrustStrip";
+import { BentoGrid } from "@/components/BentoGrid";
+import { DeveloperSection } from "@/components/DeveloperSection";
+import { IndustryTabs } from "@/components/IndustryTabs";
+import { GlobalMap } from "@/components/GlobalMap";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="relative min-h-screen overflow-x-hidden">
+      <AuroraBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <TrustStrip />
+        <BentoGrid />
+        <DeveloperSection />
+        <IndustryTabs />
+        <GlobalMap />
+        <Footer />
       </div>
     </div>
   );
